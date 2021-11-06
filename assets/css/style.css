@@ -1,0 +1,426 @@
+*, :after, :before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    border: none;
+}
+
+
+h2 {
+    text-align: center;
+    
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(255, 255, 255);
+}
+
+#root {
+    background-color: #cbaa8a;
+    line-height: 2.5em;
+    text-align: center;
+}
+
+#root h1 {
+    font-size: 14px;
+    color: #fff;
+}
+
+
+.logo {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 16px;
+}
+
+.logo a {
+    color: black;
+}
+
+.logo a:hover {
+    color: lightcoral;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li {
+    list-style-type: none;
+}
+
+.nav-links a {
+    color: rgba(15, 15, 15, 0.904);
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.burger {
+    padding-left: 150px;
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 5px;
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width:1024px){
+    .nav-links {
+        width: 60%;
+    }
+    .prev {
+        width: 50px;
+        height: 20px;
+        font-size: 5px;
+    }
+    .next {
+        width: 50px;
+        height: 20px;
+        font-size: 5px;
+    }
+    button:hover {
+        width: 55px;
+        height: 25px;
+        background-color: rgb(67, 67, 182);
+    }
+    button:active, button:focus {
+        margin: 2px auto;
+        width: 50px;
+        height: 20px;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        font-size: 13px;
+        letter-spacing: 2px;
+        background-color: #931313;
+        outline: none;
+        opacity: 0.5;
+        transition: 0.5s ease-in;
+    }
+}
+
+@media screen and (max-width:768px){
+    body {
+        overflow-x: hidden;
+    }
+   .nav-links {
+       position: absolute;
+       height: 90vh;
+       top: 13vh;
+       right: 0;
+       background-color: white;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 40%;
+       transform: translateX(100%);
+       transition: transform 0.5s ease-in;
+       z-index: 1010;
+       opacity: 0.8;
+   }
+   .nav-links li {
+       opacity: 0;
+   }
+   .burger {
+       display: block;
+   }
+   .prev {
+       width: 50px;
+       height: 20px;
+   }
+   .next {
+       width: 50px;
+       height: 20px;
+   }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+#root__2 {
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    background-color: #fff;
+}
+
+
+/* 버튼, 버튼눌렸을때 , 버튼이 포커스일때 */
+button, button:active, button:focus {
+    margin: 2px auto;
+    width: 50px;
+    height: 20px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 10px;
+    letter-spacing: 2px;
+    background-color: #931313;
+    outline: none;
+    opacity: 0.5;
+}
+
+button:hover {
+    background-color: rgb(67, 67, 182);
+}
+
+button:disabled {
+    background-color: rgb(255, 7, 7);
+}
+
+.container {
+    width: 450px;
+    margin: 20px auto;
+}
+ 
+ .album {
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.images {
+    position:relative; /* 위치가 탑 바텀 or 좌우 */
+    display: flex; /* 상하 요소가 좌우로배치 */
+    height: 300px;
+    transition: 1s ease;
+}
+
+.images img {
+    width: 450px;
+    height: 300px;
+}
+
+.prev {
+    float: left;
+}
+
+.next {
+    float: right;
+}
+
+.midle {
+    background-image: url(../../images/폭스바겐비틀.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+}
+
+.midle2 {
+    background-image: url(../../images/아이오닉5.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+}
+
+.intro {
+    width: 100%;
+    height: 100%;
+    background-color: #cbaa8a;
+}
+
+.intro__text {
+    padding: 15% 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.intro__text h3 {
+    display: block;
+    padding-bottom: 20px;
+    font-size: 25px;
+    line-height: 3em;
+    font-weight: bold;
+}
+
+.intro__text p {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 30px;
+    font-size: 19px;
+    line-height: 1.6em;
+    font-weight: bold;
+}
+
+.section3 {
+    background-image: url(../../images/제네시스\ G70.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+}
+
+.cover {
+    overflow: hidden;
+}
+
+.box {
+    float: left;
+    width: 50%;
+}
+
+.box a {
+    display: block;
+    transition: .2s all ease;
+}
+
+.box img {
+    width: 100%;
+    height: 50vh;
+}
+
+#footer {
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    margin: 0 auto;
+    padding: 70px 7.5%;
+    box-sizing: border-box;
+    background: #fff;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.footer__Area {
+    margin: 0 auto;
+}
+
+.footer__Area ul li {
+    float: left;
+    font-size: 13px;
+    line-height: 1.8em;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-shadow: uppercase;
+}
+
+.footer__title {
+    padding-bottom: 25px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #c51a27;
+}
+
+.footer__title ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.footer__info ul li:nth-child(1) {
+    float: right;
+    width: 15%;
+    box-sizing: border-box;
+}
+
+.footer__info ul li:nth-child(2) {
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.footer__info ul li:nth-child(3) {
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.footer__info ul li:nth-child(4) {
+    width: 35%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px){
+    #footer {
+        padding: 25px;
+    }
+    .footer__Area ul li {
+        font-size: 11px;
+        line-height: 1.5em;
+    }
+    .footer__info ul li {
+        width: 100% !important;
+    }
+    .footer__info ul li:nth-child(2) {
+        display: none;
+        box-sizing: border-box;
+    }
+    .footer__info ul li:nth-child(3) {
+        display: none;
+    }
+    .footer__info ul li:nth-child(4) {
+        padding-top: 20px;
+    }
+}
+
+.fix-icon {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+
+.fix-icon a {
+    outline: none;
+}
+
+.fix-icon a.instagram {
+    font-size: 0;
+    display: block;
+    opacity: 1;
+}
+
+.fix-icon a.instagram img {
+    height: 30px;
+}
