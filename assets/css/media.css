@@ -15,5 +15,11 @@
     }
     .midle, .midle2, .section3 {
         height: 50vh;
-    } 
+    }
+    .intro__text h3 {
+        font-size: 20px;
+    }
+    .intro__text p {
+        font-size: 16px;
+    }
 }
