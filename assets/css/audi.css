@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:link, a:visited, a:active {
+    color: #666;
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+body, div, p, ul, li {
+    font-size: 13px;
+    line-height: 160%;
+    color: #4b4b4b;
+}
+
+ul, ol, dl {
+    list-style: none;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+#wrap {
+    width: 100%;
+}
+
+#header {
+    width: 100%;
+    height: 148px;
+    margin-bottom: 25px;
+}
+
+.gr_center {
+    width: 998px;
+    margin: 0 auto;
+}
+
+.header_gr {
+    width: 998px;
+    height: 96px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.top_left {
+    width: 246px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.top_logo {
+    width: 208px;
+    height: 96px;
+    margin: 0 auto;
+}
+
+.top_right {
+    width: 246px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+.gnbmenu {
+    background: #e4ded2;
+    width: 998px;
+    height: 52px;
+    float: left;
+}
+
+.gnbmenu li a {
+    color: #3e3e3e;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.gnbmenu li.t_first {
+    width: 20%;
+}
+
+.gnbmenu li {
+    display: inline;
+    float: left;
+    padding: 15px 0 0 0;
+    width: 20%;
+    text-align: center;
+}
+
+.gnbmenu li.t_last {
+    background: 0;
+}
+
+#container {
+    width: 100%;
+}
+
+#contents {
+    width: 100%;
+    padding-bottom: 50px;
+    float: left;
+}
+
+.gr_comty {
+    margin-top: 20px;
+    width: 998px;
+    float: left;
+}
+
+.g_comty {
+    width: 224px;
+    border: 1px solid #e6e6e6;
+    padding: 7px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.mgr12-02 {
+    margin-right: 12px;
+}
+
+a:link, a:visited, a:active {
+    color: #666;
+    text-decoration: none;
+}
+
+.review_title {
+    width: 224px;
+    padding: 8px 0 5px 0;
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+
+.review_cts {
+    width: 224 px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 8px 0 5px 0;
+    text-align: center;
+}
+
+#footer {
+    width: 100%;
+    height: 160px;
+    clear: both;
+    display: block;
+}
+
+.gr_ftmenu {
+    background: blanchedalmond;
+    width: 953px;
+    height: 46px;
+    float: left;
+}
+
+.gr_ftmenu li {
+    display: inline;
+    float: left;
+    margin-top: 12px;
+    padding: 0 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+}
+
+.gr_top {
+    background: blanchedalmond;
+    width: 45px;
+    height: 33px;
+    padding-top: 13px;
+    float: right;
+}
+
+.bottom {
+    width: 998px;
+    padding-top: 20px;
+    float: left;
+}
+
+.ft_logo {
+    width: 150px;
+    padding-left: 20px;
+    float: left;
+}
+
+.address {
+    width: 828px;
+    font-size: 12px;
+    float: left;
+}
+
+.com_name {
+    font-weight: 700;
+    color: #e63c00;
+}
+
+.cp_bar {
+    padding: 0 10px;
+    color: black;
+}

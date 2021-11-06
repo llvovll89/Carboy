@@ -1,0 +1,200 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    display: block;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+a {
+    color: #189bfa;
+    text-decoration: none;
+    transition: all 0.5s;
+    background-color: transparent;
+}
+
+hr {
+    background: red;
+    height: 3px;
+}
+
+ul, ol, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+#root {
+    width: 100%;
+    height: 104px;
+}
+
+header#header.tint {
+    background-color: #3e4e4e;
+    box-shadow: 0 2px 36px 0 rgb(0 0 0 / 20%);
+}
+
+header#header {
+    position: fixed;
+    z-index: 1030;
+    left: 0;
+    top: 0;
+    right: 0;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+header#header .container {
+    position: relative;
+}
+
+.container {
+    width: 90%;
+    padding-left: 17px;
+    padding-right: 17px;
+    background-color: #ffff;
+    height: 54px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.logo {
+    padding-left: 4%;
+}
+
+header#header .utilMenu {
+        float: right;
+        margin-right: 20px;
+        line-height: 53px;
+}
+
+
+header#header .utilMenu > ul {
+    float: left;
+    table-layout: fixed;
+}
+
+header#header .utilMenu > ul > li {
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #3c3c3c;
+}
+
+header#header .utilMenu > ul > li a {
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#section1 {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.section1-body {
+    color: #000;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+}
+
+.section1-body img {
+    margin-bottom: 15px;
+}
+
+.section1-body h1, h2, h3 {
+    letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.section1-body p {
+    font-size: 14px;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+}
+
+.fix-icon {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+
+.fix-icon a {
+    outline: none;
+}
+
+.fix-icon a.instagram {
+    font-size: 0;
+    display: block;
+    opacity: 1;
+}
+
+.fix-icon a.instagram img {
+    height: 30px;
+}
+
+@media (max-width: 1024px) {
+    header#header {
+        height: 80px;
+    }
+    header#header .container {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 40px;
+        background-color: #ffffff;
+        border-radius: 10px 10px 10px 10px;
+    }
+    header#header .logo img {
+        width: 120px;
+        margin-top: -6px;
+    }
+
+    header#header .utilMenu {
+        display: none;
+    }
+    .section1-body h1, h2, h3{
+        font-size: 17px;
+    }
+    .section1-body p {
+        font-size: 12px;
+    }
+    .section1-body img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 1024px) {
+    header#header .logo {
+        float: left;
+        margin-top: 2px;
+    }
+    header#header .container {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}

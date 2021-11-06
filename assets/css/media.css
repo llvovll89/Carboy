@@ -1,0 +1,5 @@
+@media (max-width: 576px) {
+    .midle, .midle2, .section3 {
+        height: 50vh;
+    } 
+}

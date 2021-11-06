@@ -1,0 +1,158 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+#wrap {
+    min-width: 320px;
+    width: 100%;
+}
+
+#top {
+    width: 100%;
+    height: 30px;
+    background: #000;
+    text-align: center;
+}
+
+#top h1 {
+    font-size: 20px;
+    color: #fff;
+}
+
+#header {
+    background: #ffffff;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    z-index: 2021;
+    width: 100%;
+    height: 55px;
+    min-width: 320px;
+    box-shadow: 2px 2px 2px 2px rgba(68, 68, 68, 0.497);
+}
+
+.navigation ul {
+    float: right;
+    width: 320px;
+    height: 55px;
+}
+
+.navigation ul li {
+    float: left;
+    width: 60px;
+}
+
+.navi_f {
+    margin-right: 100px;
+    height: 55px;
+}
+
+.navi_f_img {
+    width: 70px;
+    height: 55px;
+}
+
+.home {
+    margin-top: 7px;
+    margin-left: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+#section1 {
+    margin-top: 7px;
+    width: 100%;
+    min-width: 320px;
+}
+
+.section1_img {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 300px;
+}
+
+.section1_img img {
+    margin-top: 5px;
+    width: 300px;
+    height: 300px;
+}
+
+.section1_tag {
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 20px;
+}
+
+.section1_tag h2 {
+    margin-top: 18px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.section1_tag p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.red {
+    font-size: 20px;
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .navigation ul li {
+        padding-top: 3px;
+        padding-left: 20px;
+        width: 70px;
+    }
+    .home {
+        margin-top: 10px;
+        width: 35px;
+        height: 35px;
+    }
+    .section1_tag {
+        margin-top: 30px;
+    }
+    .section1_img {
+        margin-top: 55px;
+    }
+    .section1_img img {
+        margin-top: 10px;
+        width: 250px;
+        height: 250px;
+    }
+} 
+
+@media (max-width: 1240px) {
+    .section1_img {
+        margin-top: 50px;
+        height: 550px;
+    }
+    .section1_img img {
+        margin-top: 10px;
+        width: 250px;
+        height: 275px;
+    }
+}

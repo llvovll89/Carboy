@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 48px;
+    max-height: 47px;
+    background: rgba(0,0,0,0.8);
+    z-index: 9999;
+    display: block;
+}
+
+.header-top {
+    margin: 0 auto;
+    max-width: 980px;
+    height: 48px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar {
+    margin-left: 30px;
+    padding-left: 55px;
+    text-align: center;
+    width: 80%;
+    height: 48px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-li {
+    display: list-item;
+    justify-content: space-around;
+}
+
+.mac {
+    letter-spacing: 2px;
+    padding-top: 13.5px;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: 'Mate SC', serif;
+}
+
+@media screen and (max-width:768px){
+    .navbar {
+        margin:0 auto;
+        padding-right: 30px;
+    }
+    .mac {
+        margin-right: 10px;
+        padding-top: 15px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+}
+
+.section1 {
+    width: 100%;
+    height: 90vh;
+}
+
+.section1 img {
+    width: 100%;
+    height: 90vh;
+}
+
+.section1-center {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section1-center h2 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.section1-center h4 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0.8;
+    letter-spacing: 1px;
+}
+
+.section2 {
+    width: 100%;
+    height: 90vh;
+}
+
+.section2 img {
+    width: 100%;
+    height: 90vh;
+}
+
+.section3 {
+    width: 100%;
+    height: 90vh;
+}
+
+.section3 img {
+    width: 100%;
+    height: 90vh;
+}
+
+.fix-icon {
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+}
+
+.fix-icon a.instagram {
+    display: block;
+}
+
+.fix-icon a.instagram img {
+    height: 90px;
+}
