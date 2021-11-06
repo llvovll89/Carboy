@@ -251,14 +251,14 @@ button:disabled {
 }
 
 .midle {
-    background-image: url(../../images/폭스바겐비틀.jpg);
+    background-image: url(././images/폭스바겐비틀.jpg);
     background-size: 100% 100%;
     width: 100%;
     height: 100vh;
 }
 
 .midle2 {
-    background-image: url(../../images/아이오닉5.png);
+    background-image: url(././images/아이오닉5.png);
     background-size: 100% 100%;
     width: 100%;
     height: 100vh;
@@ -295,7 +295,7 @@ button:disabled {
 }
 
 .section3 {
-    background-image: url(../../images/제네시스\ G70.jpg);
+    background-image: url(././images/제네시스\ G70.jpg);
     background-size: 100% 100%;
     width: 100%;
     height: 100vh;
