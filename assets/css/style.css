@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    image-rendering: -webkit-optimize-contrast;
+}
+
 img {
     border: none;
 }
@@ -11,7 +15,6 @@ img {
 
 h2 {
     text-align: center;
-    
 }
 
 a {
@@ -27,7 +30,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    min-height: 7.5vh;
     background-color: rgb(255, 255, 255);
 }
 
@@ -38,7 +41,10 @@ nav {
 }
 
 #root h1 {
-    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
     color: #fff;
 }
 
@@ -71,10 +77,10 @@ nav {
 .nav-links a {
     color: rgba(15, 15, 15, 0.904);
     text-decoration: none;
-    letter-spacing: 4px;
-    font-weight: bold;
-    font-size: 14px;
-    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
 }
 
 .burger {
@@ -91,14 +97,79 @@ nav {
     transition: all 0.5s ease;
 }
 
+.prev {
+    width: 70px;
+    height: 30px;
+    font-size: 15px;
+}
+.next {
+    width: 70px;
+    height: 30px;
+    font-size: 15px;
+}
+button:hover {
+    width: 85px;
+    height: 40px;
+    background-color: rgb(67, 67, 182);
+}
+button:active, button:focus {
+    margin: 2px auto;
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 2px;
+    background-color: #931313;
+    outline: none;
+    opacity: 0.5;
+    transition: 0.5s ease-in;
+}
+
+@media screen and (max-width:768px){
+    body {
+        overflow-x: hidden;
+    }
+   .nav-links {
+       position: absolute;
+       height: 60vh;
+       top: 13vh;
+       right: 0;
+       background-color: white;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 40%;
+       transform: translateX(100%);
+       transition: transform 0.4s ease-in;
+       z-index: 1010;
+       opacity: 0.8;
+   }
+   .nav-links li {
+       opacity: 0;
+   }
+   .burger {
+       display: block;
+   }
+   .prev {
+       width: 50px;
+       height: 20px;
+   }
+   .next {
+       width: 50px;
+       height: 20px;
+   }
+}
+
 @media screen and (max-width:1024px){
     .nav-links {
         width: 60%;
     }
     .prev {
-        width: 50px;
-        height: 20px;
-        font-size: 5px;
+        width: 60px;
+        height: 30px;
+        font-size: 10px;
     }
     .next {
         width: 50px;
@@ -126,40 +197,6 @@ nav {
     }
 }
 
-@media screen and (max-width:768px){
-    body {
-        overflow-x: hidden;
-    }
-   .nav-links {
-       position: absolute;
-       height: 90vh;
-       top: 13vh;
-       right: 0;
-       background-color: white;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       width: 40%;
-       transform: translateX(100%);
-       transition: transform 0.5s ease-in;
-       z-index: 1010;
-       opacity: 0.8;
-   }
-   .nav-links li {
-       opacity: 0;
-   }
-   .burger {
-       display: block;
-   }
-   .prev {
-       width: 50px;
-       height: 20px;
-   }
-   .next {
-       width: 50px;
-       height: 20px;
-   }
-}
 
 .nav-active {
     transform: translateX(0%);
@@ -190,7 +227,7 @@ nav {
 
 #root__2 {
     width: 100%;
-    height: 50vh;
+    height: 600px;
     text-align: center;
     background-color: #fff;
 }
@@ -251,17 +288,15 @@ button:disabled {
 }
 
 .midle {
-    background-image: url(../../images/폭스바겐비틀.jpg);
-    background-size: 100% 100%;
-    width: 100%;
-    height: 100vh;
+    overflow: hidden;
+    height: 800px;
 }
 
 .midle2 {
     background-image: url(../../images/아이오닉5.png);
     background-size: 100% 100%;
     width: 100%;
-    height: 100vh;
+    height: 800px;
 }
 
 .intro {
@@ -274,7 +309,7 @@ button:disabled {
     padding: 15% 0;
     text-align: center;
     color: #fff;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .intro__text h3 {
@@ -298,7 +333,7 @@ button:disabled {
     background-image: url(../../images/제네시스\ G70.jpg);
     background-size: 100% 100%;
     width: 100%;
-    height: 100vh;
+    height: 800px;
 }
 
 .cover {
@@ -317,7 +352,7 @@ button:disabled {
 
 .box img {
     width: 100%;
-    height: 50vh;
+    height: 800px;
 }
 
 #footer {
@@ -328,7 +363,7 @@ button:disabled {
     padding: 70px 7.5%;
     box-sizing: border-box;
     background: #fff;
-    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .footer__Area {
@@ -382,28 +417,6 @@ button:disabled {
     box-sizing: border-box;
 }
 
-@media (max-width: 1024px){
-    #footer {
-        padding: 25px;
-    }
-    .footer__Area ul li {
-        font-size: 11px;
-        line-height: 1.5em;
-    }
-    .footer__info ul li {
-        width: 100% !important;
-    }
-    .footer__info ul li:nth-child(2) {
-        display: none;
-        box-sizing: border-box;
-    }
-    .footer__info ul li:nth-child(3) {
-        display: none;
-    }
-    .footer__info ul li:nth-child(4) {
-        padding-top: 20px;
-    }
-}
 
 .fix-icon {
     position: fixed;
